@@ -1,0 +1,498 @@
+.navigacija{
+    list-style-type: none;
+}
+
+li{
+    float: right;
+}
+
+a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #222831;
+}
+
+.pozadina{
+    background-image: url(Fotografije/logo2.png);
+    
+
+}
+
+.logo{
+    float: left;
+}
+
+.lista{
+    float: right;
+}
+
+.povratak{
+    float: right;
+    border: 2px solid #222831;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.povratak:hover{
+    opacity: 0.5;
+}
+
+.podnozje{
+    text-align: center;
+}
+
+
+
+.upit{
+    margin-top: 0;
+}
+
+
+.navigacija a:hover{
+    border-bottom: 2px solid grey;
+}
+
+.aktivna{
+    border-bottom: 5px solid grey;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #FFD369;
+    color: #222831;
+}
+
+.sidebar a{
+    background-color: grey;
+    border: 1px solid #222831; 
+    text-decoration: underline;
+    width: 10cm;
+}
+
+.sidebar a:hover{
+    border-top: 5px solid #222831;
+    border-bottom: 5px solid #222831;
+
+    
+}
+
+
+
+
+/* Grid - početna stranica */
+.navigacije{grid-area: navigacije;}
+.prva-vijest{grid-area: prva-vijest;}
+.o-nama{grid-area: o-nama;}
+.druga-vijest{grid-area: druga-vijest;}
+.video{grid-area: video;}
+.pozadina{grid-area: pozadina;}
+.zastitni-znak{grid-area: zastitni-znak;}
+.rest{grid-area: rest;}
+.rest2{grid-area: rest2;}
+
+
+
+/* Grid - usluge */
+.sidebar{grid-area: sidebar;}
+.prva-usluga{grid-area: prva-usluga;}
+.druga-usluga{grid-area: druga-usluga;}
+.treca-usluga{grid-area: treca-usluga;}
+.cetvrta-usluga{grid-area: cetvrta-usluga;}
+
+
+
+
+
+/* Grid - katalog */
+.prvi-proizvod{ grid-area: prvi-proizvod;}
+.drugi-proizvod{ grid-area: drugi-proizvod;}
+.treci-proizvod{ grid-area: treci-proizvod;}
+.cetvrti-proizvod{ grid-area: cetvrti-proizvod;}
+.peti-proizvod{ grid-area: peti-proizvod;}
+.sesti-proizvod{ grid-area: sesti-proizvod;}
+.sedmi-proizvod{ grid-area: sedmi-proizvod;}
+.osmi-proizvod{ grid-area: osmi-proizvod;}
+.deveti-proizvod{ grid-area: deveti-proizvod;}
+.deseti-proizvod{ grid-area: deseti-proizvod;}
+.jedanaesti-proizvod{ grid-area: jedanaesti-proizvod;}
+.dvanaesti-proizvod{ grid-area: dvanaesti-proizvod;}
+
+
+/* Grid - kontakt */
+.obrazac{grid-area: obrazac;}
+.mapa{grid-area: mapa;}
+
+
+
+/* Stolno računalo */
+@media (min-width: 1281px) {
+
+    .index-grid{
+        display: grid;
+        grid-template-areas: 
+        "navigacije     navigacije      navigacije      navigacije"
+        "pozadina       pozadina        pozadina        pozadina"
+        "prva-vijest    o-nama          o-nama          o-nama"
+        "druga-vijest   zastitni-znak   zastitni-znak   zastitni-znak"
+        "video          video           rest            rest";
+        row-gap: 1rem;
+        column-gap: 3cm;
+        
+    }
+
+    
+    .katalog-grid{
+        display: grid;
+        grid-template-areas:
+        "navigacije         navigacije          navigacije              navigacije"
+        "pozadina           pozadina            pozadina                pozadina"
+        "prvi-proizvod      drugi-proizvod      treci-proizvod          cetvrti-proizvod"
+        "peti-proizvod      sesti-proizvod      sedmi-proizvod          osmi-proizvod"
+        "deveti-proizvod    deseti-proizvod     jedanaesti-proizvod     dvanaesti-proizvod";
+        row-gap: 1rem;
+        column-gap: 3cm;
+    }
+
+    .kontakt-grid{
+        display: grid;
+        grid-template-areas:
+        "navigacije     navigacije      navigacije      navigacije"
+        "pozadina       pozadina        pozadina        pozadina"
+        "obrazac        obrazac         mapa            mapa"
+        "obrazac        obrazac         mapa            mapa";
+        row-gap: 1rem;
+        column-gap: 3cm;
+    }
+
+    .usluge-grid{
+        display: grid;
+        grid-template-areas: 
+        "navigacije     navigacije          navigacije          navigacije"
+        "pozadina       pozadina            pozadina            pozadina"
+        "sidebar        prva-usluga         prva-usluga         prva-usluga"
+        "sidebar        druga-usluga        druga-usluga        druga-usluga"
+        "sidebar        treca-usluga        treca-usluga        treca-usluga"
+        "sidebar        cetvrta-usluga      cetvrta-usluga      cetvrta-usluga";
+        row-gap: 1rem;
+        column-gap: 3cm;
+    }
+
+    
+}
+
+/* Tablet */
+
+@media (min-width:801px) and (max-width:1281px){
+
+    
+    .index-grid{
+        display: grid;
+        grid-template-areas: 
+        "navigacije     navigacije"
+        "pozadina       pozadina"
+        "prva-vijest    o-nama"
+        "druga-vijest   zastitni-znak"
+        "video          rest";
+        row-gap: 1rem;
+        column-gap: 3cm;
+    
+    }
+
+    
+    .katalog-grid{
+        display: grid;
+        grid-template-areas:
+        "navigacije         navigacije              navigacije"
+        "pozadina           pozadina                pozadina"
+        "prvi-proizvod      drugi-proizvod          treci-proizvod"
+        "cetvrti-proizvod   peti-proizvod           sesti-proizvod"
+        "sedmi-proizvod     osmi-proizvod           deveti-proizvod"
+        "deseti-proizvod    jedanaesti-proizvod     dvanaesti-proizvod";
+        row-gap: 2rem;
+        column-gap: 2rem;
+        
+    }
+
+    .kontakt-grid{
+        display: grid;
+        grid-template-areas:
+        "navigacije     navigacije"
+        "pozadina       pozadina"
+        "obrazac        mapa"
+        "obrazac        mapa";
+        row-gap: 1rem;
+        column-gap: 3cm;
+    }
+
+    .usluge-grid{
+        display: grid;
+        grid-template-areas: 
+        "navigacije     navigacije"
+        "pozadina       pozadina"
+        "sidebar        prva-usluga"
+        "sidebar        druga-usluga"
+        "sidebar        treca-usluga"
+        "sidebar        cetvrta-usluga";
+        row-gap: 1rem;
+        column-gap: 3cm;
+    }
+
+    .video{
+        display: flex;
+        justify-content: center;
+    }
+
+    .rest{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* Mobitel */
+
+@media (max-width:801px){
+
+    .index-grid{
+        display: grid;
+        grid-template-areas: 
+        "navigacije"
+        "pozadina"
+        "prva-vijest"
+        "o-nama"
+        "druga-vijest"
+        "zastitni-znak"
+        "video"
+        "rest";
+        row-gap: 1rem;
+        column-gap: 3cm;
+    }
+
+    .katalog-grid{
+        display: grid;
+        grid-template-areas:
+        "navigacije             navigacije"
+        "pozadina               pozadina"
+        "prvi-proizvod          drugi-proizvod"
+        "treci-proizvod         cetvrti-proizvod"
+        "peti-proizvod          sesti-proizvod"
+        "sedmi-proizvod         osmi-proizvod"
+        "deveti-proizvod        deseti-proizvod"
+        "jedanaesti-proizvod    dvanaesti-proizvod";
+        row-gap: 2rem;
+        column-gap: 2rem;
+        
+        
+    }
+
+    .kontakt-grid{
+        display: grid;
+        grid-template-areas:
+        "navigacije"
+        "pozadina"
+        "mapa"
+        "obrazac";
+        row-gap: 1rem;
+        column-gap: 3cm;
+    }
+
+    .usluge-grid{
+        display: grid;
+        grid-template-areas: 
+        "navigacije     "
+        "pozadina       "
+        "sidebar        "
+        "prva-usluga"
+        "druga-usluga"
+        "treca-usluga"
+        "cetvrta-usluga";
+        row-gap: 1rem;
+        column-gap: 3cm;
+        
+    }
+
+    .video{
+        display: flex;
+        justify-content: center;
+    }
+
+    .rest{
+        display: flex;
+        justify-content: center;
+    }
+
+    .mapa{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+
+/* Katalog proizvoda */
+
+.prvi-proizvod{
+    width: 250px;
+    text-align: center;
+    border: solid black 2px;
+}
+
+.drugi-proizvod{
+    width: 250px;
+    text-align: center;
+    border: solid black 2px;
+}
+
+.treci-proizvod{
+    width: 250px;
+    text-align: center;
+    border: solid black 2px;
+}
+
+.cetvrti-proizvod{
+    width: 250px;
+    text-align: center;
+    border: solid black 2px;
+}
+
+.peti-proizvod{
+    width: 250px;
+    text-align: center;
+    border: solid black 2px;
+}
+
+.sesti-proizvod{
+    width: 250px;
+    text-align: center;
+    border: solid black 2px;
+}
+
+.sedmi-proizvod{
+    width: 250px;
+    text-align: center;
+    border: solid black 2px;
+}
+
+.osmi-proizvod{
+    width: 250px;
+    text-align: center;
+    border: solid black 2px;
+}
+
+.deveti-proizvod{
+    width: 250px;
+    text-align: center;
+    border: solid black 2px;
+}
+
+.deseti-proizvod{
+    width: 250px;
+    text-align: center;
+    border: solid black 2px;
+}
+
+.jedanaesti-proizvod{
+    width: 250px;
+    text-align: center;
+    border: solid black 2px;
+}
+
+.dvanaesti-proizvod{
+    width: 250px;
+    text-align: center;
+    border: solid black 2px;
+}
+
+
+
+.katalog-grid button{
+  border: none;
+  outline: 0;
+  padding: 10px;
+  color: white;
+  background-color: #222831;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.katalog-grid button:hover{
+    opacity: 0.7;   
+}
+
+.gumb_{
+    border: none;
+    outline: 0;
+    margin-left: 25%;
+    margin-right: 25%;
+    color: white;
+    background-color: #222831;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    width: 5cm;
+    padding: 10px;
+}
+
+
+
+.gumb_:hover{
+    opacity: 0.7;
+}
+
+#vrh-gumb{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    background-color: #222831;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#vrh-gumb:hover{
+    opacity: 0.7;
+}
+
+.obrazac{
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+
+#ime_prezime{
+    width: 5cm;
+    margin-left: 25%;
+    margin-right: 25%;
+    
+}
+
+
+#email{
+    width: 5cm;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#upit{
+    width: 5cm;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+fieldset{
+    border-radius: 2em;
+    border: 2px solid #222831;
+    background-color: grey;
+}
+
+.legenda{
+    font-size: xx-large;
+}
+

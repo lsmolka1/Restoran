@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Fotografije/android-chrome-192x192.png" type="image/x-icon" />
+    <link rel="stylesheet" href="stil.css">
+    <title>Kontakt</title>
+</head>
+<body>
+    
+    <div class="kontakt-grid">
+        <div class="navigacije">
+
+                
+
+            <nav class="navigacija">
+                <div class="logo">
+                    <li><a href="index.html" class="logoo">
+
+                    <img src="Fotografije/android-chrome-192x192.png" width="30" height="30" alt="Logo - Lucijin gambit">    
+                    Lucijin gambit
+                    </a></li>
+                </div>
+                
+
+                <div class="lista">
+                    <li>
+                        <a href="kontakt.html" aria-current="page" class="aktivna">Kontakt</a>
+                    </li>
+
+                    <li>
+                        <a href="katalog.html" class="katalog-nav">Katalog</a>
+                    </li>
+
+                    <li>
+                        <a href="usluge.html" class="usluge-nav">Usluge</a>
+                    </li>
+
+                    <li>
+                        <a href="index.html" class="pocetna-nav">Početna stranica</a>
+                    </li>
+                </div>
+            </nav>
+        
+                <br>
+
+        
+        
+        
+        </div>
+
+        <div class="pozadina">
+            <img src="Fotografije/logo2.png" alt="Fotografija pozadine">
+
+        </div>
+
+
+        <div class="obrazac">
+            <fieldset>
+                <legend class="legenda"><b>Kontakt</b></legend>
+            <div class="ime_prezime_">
+                <form action="akcija.php" method="get"></form>
+                    <label for="ime_prezime"><b>Ime i prezime</b></label>
+                    <input type="text" id="ime_prezime" name="ime_server">
+            </div>
+            <br>
+            <br>
+
+
+            <div class="email">
+            <form action="akcija.php" method="get"></form>
+                <label for="email"><b>Email</b></label>
+                <input type="text" id="email" name="email">
+            </div>
+
+            <br>
+            <br>
+
+
+            <div class="upit_">
+            <form action="akcija.php" method="get"></form>
+                <label for="upit" class="upit"><b>Upit</b></label>
+                <textarea name="upit" id="upit" cols="30" rows="10"></textarea>
+            </div>
+            <br>
+            <br>
+
+        
+            <div class="posalji">
+                <button type="button" onclick="alert('Upit je uspješno poslan.')" class="gumb_">Pošalji</button>
+            </div>
+            </fieldset>
+        </div>
+        <br>
+
+        
+        <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1397.049357117015!2d18.68252890045679!3d45.54833971980701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475ce7b2b500e20d%3A0x6196ebb776b91b9a!2sZrmanjska%20ul.%205%2C%2031000%2C%20Osijek!5e0!3m2!1shr!2shr!4v1677787367462!5m2!1shr!2shr" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <address>
+            <p class="adresa">
+                Zrmanjska ulica 5, 31000, Osijek
+            </p>
+            <p class="grad">
+                Osijek
+            </p>
+            <p class="drzava">
+                Republika Hrvatska
+            </p>
+            </address>
+            
+        </div>
+        
+    </div>
+
+    <button onclick="topFunction()" id="vrh-gumb">Povratak na vrh</button>
+    
+    
+
+    <footer>
+        <p class="podnozje">
+            ©Ofir Praksa  - Lucija Smolka - 2023
+        </p>
+    </footer>
+    
+<script src="usluge.js"></script>
+</body>
+</html>
